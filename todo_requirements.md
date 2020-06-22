@@ -24,8 +24,10 @@
 - todoList.toggleComplete should change the completed property
 
 # V5 Requirements
-- displayTodos should show todoText.
-- displayTodos should tell you if .todos is empty.
-- displayTodos should show .completed.
+- ~~displayTodos should show todoText.~~
+- ~~displayTodos should tell you if .todos is empty.~~
+- ~~displayTodos should show .completed.~~
 
 # V6 Requirements
+- .toggleAll: If everyting is **true**, make everything **false**.
+- .toggleAll: Otherwise, make everything **true**.
