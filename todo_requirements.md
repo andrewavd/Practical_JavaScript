@@ -1,6 +1,6 @@
 # V1 Requirements
-- It should **store** todos
-- It should **display** todos
+- <mark>~~It should **store** todos~~</mark>
+- <span style="background-color: green">~~It should **display** todos~~</span>
 - It should **add** new todos
 - It should **edit** a todo
 - It should **delete** a todo
@@ -29,5 +29,5 @@
 - ~~displayTodos should show .completed.~~
 
 # V6 Requirements
-- .toggleAll: If everyting is **true**, make everything **false**.
-- .toggleAll: Otherwise, make everything **true**.
+- .toggleAll: If everyting is *true*, make everything *false*.
+- .toggleAll: Otherwise, make everything *true*.
