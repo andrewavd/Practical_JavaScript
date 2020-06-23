@@ -5,7 +5,9 @@
     <title>Practical JavaScript</title>
   </head>
   <body>
-    <h1>TodosList</h1>
+    <h1>Todo List</h1>
+    <button id='display'>Display Todos</button>
+    <button id='toggle'>Toggle All</button>
     <script>
       var todoList = {
         todos: [],
@@ -61,6 +63,18 @@
           this.displayTodos();      
         }
       };
+
+      var displayTodosButton = document.getElementById('display');
+      var toggleAllButton = document.getElementById('toggle');
+
+      displayTodosButton.addEventListener('click', function() {
+        todoList.displayTodos();
+      });
+
+      toggleAllButton.addEventListener('click', function() {
+        todoList.toggleAll();
+      });
+
     </script>
   </body>
 </html>

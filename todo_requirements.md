@@ -33,6 +33,6 @@
 - .<span style="background-color: green">~~toggleAll: Otherwise, make everything *true*.~~</span>
 
 # V7 Requirements
-- <span style="background-color: red">~~There should be a "Display todos" button and a "Toggle all" button in the app.~~</span>
-- <span style="background-color: red">~~Clicking "Display todos" should run todoList.displayTodos.~~</span>
-- <span style="background-color: red">~~Clicking "Toggle all" should run todoList.toggleAll.~~</span>
+- <span style="background-color: green">~~There should be a "Display todos" button and a "Toggle all" button in the app.~~</span>
+- <span style="background-color: green">~~Clicking "Display todos" should run todoList.displayTodos.~~</span>
+- <span style="background-color: green">~~Clicking "Toggle all" should run todoList.toggleAll.~~</span>
