@@ -44,7 +44,21 @@
           this.displayTodos();
         },
         toggleAll: function() {
-          
+          let allTrue = true;
+          for (let i = 0; i < this.todos.length; i++) {
+            if ( this.todos[i].completed === false) {
+              allTrue = false;
+              break;
+            }
+          }
+          for (let i = 0; i < this.todos.length; i++) {
+            if (allTrue) {
+              this.todos[i].completed = false;
+            } else {
+              this.todos[i].completed = true;
+            }
+          }
+          this.displayTodos();      
         }
       };
     </script>
