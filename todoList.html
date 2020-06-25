@@ -6,8 +6,27 @@
   </head>
   <body>
     <h1>Todo List</h1>
-    <button onclick='buttonHandlers.displayTodosButton()'>Display Todos</button>
-    <button onclick='buttonHandlers.toggleAllButton()'>Toggle All</button>
+    <div>
+      <button onclick="buttonHandlers.displayTodosButton()">Display Todos</button>
+      <button onclick="buttonHandlers.toggleAllButton()">Toggle All</button>
+    </div>
+    <div>
+      <button onclick="buttonHandlers.addTodoButton()">Add Todo</button>
+      <input id="addTodoTextInput" type="text">
+    </div>
+    <div>
+      <button onclick="buttonHandlers.editTodoButton()">Edit Todo</button>
+      <input id="editTodoIndexInput" type="number">
+      <input id="editTodoTextInput" type="text">
+    </div>
+    <div>
+      <button onclick="buttonHandlers.deteteTodoButton()">Delete Todo</button>
+      <input id="deleteTodoIndexInput" type="number">
+    </div>
+    <div>
+      <button onclick="buttonHandlers.toggleCompletedButton()">Toggle Completed</button>
+      <input id="toggleCompletedIndexInput" type="number">
+    </div>
  
   <script>
       var todoList = {
@@ -66,10 +85,32 @@
       };
 
       var buttonHandlers = {
+        todoText: document.getElementById('addTodoTextInput'),
+        editText: document.getElementById('editTodoTextInput'),
+        editTextIndex: document.getElementById('editTodoIndexInput'),
+        deleteTodoIndex: document.getElementById('deleteTodoIndexInput'),
+        toggleCompletedIndex: document.getElementById('toggleCompletedIndexInput'),
         displayTodosButton: function() {
           todoList.displayTodos();
         },
-        toggleAllButton: function() {
+        addTodoButton: function() {
+          todoList.addTodo(this.todoText.value);
+          this.todoText.value = '';
+        },
+        editTodoButton: function() {
+          todoList.editTodo(this.editTextIndex.valueAsNumber, this.editText.value);
+          this.editText.value = '';
+          this.editTextIndex.value = '';
+        },
+        deteteTodoButton: function() {
+          todoList.deleteTodo(this.deleteTodoIndex.valueAsNumber);
+          this.deleteTodoIndex.value = '';
+        },
+        toggleCompletedButton: function() {
+          todoList.toggleCompleted(this.toggleCompletedIndex.valueAsNumber);
+          this.toggleCompletedIndex.value = '';
+        },
+         toggleAllButton: function() {
           todoList.toggleAll();
         }
       };
