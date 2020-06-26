@@ -44,4 +44,9 @@
 - <span style="background-color: green">~~It should have working controls for .toggleCompleted~~</span>
 
 # V9 Requirements
+- <span style="background-color: green">~~There should be an li element for every todo~~</span>
+- <span style="background-color: green">~~Each li element should contain .todoText~~</span>
+- <span style="background-color: green">~~Each le element should shoe .completed~~</span>
+
+# V10 Requirements
 - 

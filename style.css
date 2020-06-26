@@ -1,0 +1,37 @@
+::placeholder {
+   color: lightgrey;
+}
+
+body {
+    font-family: sans-serif;
+}
+
+h1 {
+    text-transform: uppercase;
+}
+
+ul {
+    font-size: 2em;
+    color: grey;
+    list-style-type: none;
+}
+
+button {
+    border: none;
+    border-radius: 4px;
+    padding: 10px 15px;
+    background-color: #008cba;
+    border-color: ;
+    color: white;
+    margin: 3px;
+}
+
+input {
+    padding: 10px;
+    margin: 3px;
+    /* background: rgba(0, 0, 0, 0.003); */
+}
+
+.completed {
+    text-decoration: line-through;
+}
