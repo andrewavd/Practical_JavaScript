@@ -35,3 +35,11 @@ input {
 .completed {
     text-decoration: line-through;
 }
+
+.deleteButton {
+    vertical-align: middle;
+    padding: 5px;
+    background: pink;
+    position: absolute;
+    right: 10px;
+}
